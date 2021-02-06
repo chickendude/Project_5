@@ -2,6 +2,10 @@
 
 {% from 'macros.html' import render_field %}
 
+{% block css %}
+  <link rel="stylesheet" href="/static/css/details.css">
+{% endblock %}
+
 {% block menu %}
 {% for entry in entries %}
 <a href="{{ url_for('index') }}">Home</a>
